@@ -37,3 +37,18 @@ export const concertos = [
   }
 ]
 
+export const orchestral = [
+  {
+    Title: 'Franklin Portrait: Preamble for Orchestra',
+    Type: 'Orchestral',
+    dateOfComposition: '2006',
+    Duration: '5 minutes',
+    Score: '22 pp.',
+    partOrParts: '57 pp',
+    Note: 'Composed on the occasion of the Tercentenary of Benjamin Franklin’s birth for Franklin High School (Franklin, Massachusetts)',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    catalogueNo: '007'
+  }
+]
+
