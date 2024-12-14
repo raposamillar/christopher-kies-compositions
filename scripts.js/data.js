@@ -13,7 +13,7 @@ export const concertos = [
   },
   {
     Title: 'Academic Festival Rag for Two Pianos',
-    Type: 'Concerto Arranged for Two Pianos and Wind Ensemble',
+    Type: 'Concerto Arranged for Two Pianos',
     dateOfComposition: '2012',
     Duration: '10.5 minutes',
     Score: '32 pp.',
@@ -52,3 +52,29 @@ export const orchestral = [
   }
 ]
 
+export const orchestraNarration = [
+  {
+    Title: 'Le Tombeau de Saint-Saëns',
+    Type: 'Orchestra with Narration',
+    dateOfComposition: '2003',
+    Duration: '23.5 minutes',
+    Score: '115 pp.',
+    partOrParts: '336 pp.',
+    Note: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    catalogueNo: '010'
+  },
+  {
+    Title: 'Little Red Riding Hood (or Ladle Rat Rotten Hut)',
+    Type: 'Orchestra with Narration',
+    dateOfComposition: '2008',
+    Duration: '13 minutes',
+    Score: '45 pp.',
+    partOrParts: '88 pp',
+    Note: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    catalogueNo: '011'
+  }
+]

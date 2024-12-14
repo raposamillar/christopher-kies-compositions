@@ -1,15 +1,16 @@
 import { concertos } from './data.js'
 import { orchestral } from './data.js'
+import { orchestraNarration } from './data.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
+const orchestraNarrContainer = document.getElementById('orchestra-narr-container')
 
 let concertoHTML = ''
 
 concertos.forEach(concerto => {
     concertoHTML += `
     <div class="concerto">
-      <h2>Concertos</h2>
       <h3>${concerto.Title}</h3>
       <p><strong>Type: </strong>${concerto.Type}</p>
       <p><strong>Date of Composition: </strong>${concerto.dateOfComposition}</p>
@@ -31,7 +32,6 @@ concertos.forEach(concerto => {
   orchestral.forEach(orchestra => {
     orchestraHTML += `
     <div class="orchestra">
-      <h2>Orchestra</h2>
       <h3>${orchestra.Title}</h3>
       <p><strong>Type: </strong>${orchestra.Type}</p>
       <p><strong>Date of Composition: </strong>${orchestra.dateOfComposition}</p>
@@ -47,4 +47,25 @@ concertos.forEach(concerto => {
   `
   })
   orchestraContainer.innerHTML = orchestraHTML;
+
+  let orchestraNarrHTML = ''
+
+  orchestraNarration.forEach(orchestraNarr => {
+    orchestraNarrHTML += `
+    <div class="orchestraNarr">
+      <h3>${orchestraNarr.Title}</h3>
+      <p><strong>Type: </strong>${orchestraNarr.Type}</p>
+      <p><strong>Date of Composition: </strong>${orchestraNarr.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${orchestraNarr.Duration}</p>
+      <p><strong>Score: </strong>${orchestraNarr.Score}</p>
+      <p><strong>Part(s): </strong>${orchestraNarr.partOrParts}</p>
+      <p><strong>Note: </strong>${orchestraNarr.Note}</p>
+      <p><strong>Sheet Music Format: </strong>${orchestraNarr.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${orchestraNarr.recordingFormat}</p>
+      <p><strong>Catalogue Number: </strong>${orchestraNarr.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  orchestraNarrContainer.innerHTML = orchestraNarrHTML;
   
