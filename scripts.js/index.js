@@ -3,12 +3,14 @@ import { orchestral } from './data.js'
 import { orchestraNarration } from './data.js'
 import { concertBandNarration } from './data.js'
 import { chamberEnsemblesNarration } from './data.js'
+import { chamberMusicDoubleReed } from './data.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
 const orchestraNarrContainer = document.getElementById('orchestra-narr-container')
 const concertBandNarrContainer = document.getElementById('concert-band-narr-container')
 const chamberEnsemblesNarrContainer = document.getElementById('chamber-ensemble-narr-container')
+const chamberMusicDoubleReedContainer = document.getElementById('chamber-music-double-reed-container')
 
 let concertoHTML = ''
 
@@ -124,4 +126,27 @@ concertos.forEach(concerto => {
   `
   })
   chamberEnsemblesNarrContainer.innerHTML = chamberEnsemblesNarrHTML;
+  
+  let chamberMusicDoubleReedHTML = ''
+
+  chamberMusicDoubleReed.forEach(chamberDoubleReed => {
+    chamberMusicDoubleReedHTML += `
+    <div class="chamberDoubleReed">
+      <h3>${chamberDoubleReed.Title}</h3>
+      <p><strong>Category: </strong>${chamberDoubleReed.Category}</p>
+      <p><strong>Forces: </strong>${chamberDoubleReed.Forces}</p>
+      <p><strong>Date of Composition: </strong>${chamberDoubleReed.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${chamberDoubleReed.Duration}</p>
+      <p><strong>Score: </strong>${chamberDoubleReed.Score}</p>
+      <p><strong>Part(s): </strong>${chamberDoubleReed.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${chamberDoubleReed.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${chamberDoubleReed.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${chamberDoubleReed.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${chamberDoubleReed.URL}" target="_blank">${chamberDoubleReed.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${chamberDoubleReed.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  chamberMusicDoubleReedContainer.innerHTML = chamberMusicDoubleReedHTML;
   

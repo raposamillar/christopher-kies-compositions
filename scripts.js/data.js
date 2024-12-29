@@ -236,3 +236,20 @@ export const chamberEnsemblesNarration = [
     catalogueNo: '027'
   }
 ]
+
+export const chamberMusicDoubleReed = [
+  {
+    Title: 'Arietta for Bassoon Quartet',
+    Category: 'Chamber Music with Double Reed Instruments',
+    Forces: 'Four Bassoons',
+    dateOfComposition: '2007',
+    Duration: '4 minutes',
+    Score: '7 pp.',
+    partOrParts: '8 pp.',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3, Live Performance',
+    URL: 'https://www.christopherkies.com/store/arietta-for-bassoon-quartet',
+    catalogueNo: '028'
+  }
+]
