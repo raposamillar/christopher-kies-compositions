@@ -407,3 +407,76 @@ export const chamberMusicDoubleReed = [
     catalogueNo: '049'
   }
 ]
+
+export const otherInstrumental = [
+  {
+    Title: 'Flight of the Bungled G for Harpsichord',
+    Category: 'Other Instrumental Works',
+    Forces: 'Harpsichord',
+    dateOfComposition: '2001',
+    Duration: '2.5 minutes',
+    Score: '8 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; MIDI',
+    URL: 'https://www.christopherkies.com/store/flight-of-the-bungled-g-for-harpsicord',
+    catalogueNo: '144'
+  },
+  {
+    Title: 'Four Bachtatonic/Rocktatonic Inventions for Marimba, Clarinet in B Flat, and Piano',
+    Category: 'Other Instrumental Works',
+    Forces: 'Marimba, Clarinet in B-flat, and Piano',
+    dateOfComposition: '2018',
+    Duration: '11 minutes',
+    Score: '35 pp.',
+    partOrParts: '16',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; MIDI',
+    URL: 'https://www.christopherkies.com/store/four-bachtatonicrocktatonic-inventions-for-marimba-clarinet-in-b-flat-and-piano',
+    catalogueNo: '056'
+  },
+  {
+    Title: 'Ragtime Reflections for Flute and Piano',
+    Category: 'Other Instrumental Works',
+    Forces: 'Flute and Piano',
+    dateOfComposition: '2013',
+    Duration: 'not given',
+    Score: '13 pp.',
+    partOrParts: '4',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'n/a',
+    URL: 'https://www.christopherkies.com/store/ragtime-reflections-flute-and-piano',
+    catalogueNo: '061'
+  },
+  {
+    Title: 'Take the Love, This Can\'t be the A Train for Clarinet in B Flat and Piano',
+    Category: 'Other Instrumental Works',
+    Forces: 'Clarinet in B-flat and Piano',
+    dateOfComposition: '2010; revised 2011',
+    Duration: '4.5 minutes',
+    Score: '12 pp.',
+    partOrParts: '3',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/take-the-love-this-cant-be-the-a-train-for-clarinet-in-b-flat-and-piano',
+    catalogueNo: '063'
+  },
+  {
+    Title: 'Taylor Fanfare for String Quartet and Piano',
+    Category: 'Other Instrumental Works',
+    Forces: 'String Quartet and Piano',
+    dateOfComposition: 'orig. 2013; arr. 2017',
+    Duration: '4.5 minutes',
+    Score: '24 pp.',
+    partOrParts: '12',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'n/a',
+    URL: 'https://www.christopherkies.com/store/taylor-fanfare-for-string-quartet-and-piano',
+    catalogueNo: '066'
+  },
+]

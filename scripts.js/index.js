@@ -4,6 +4,7 @@ import { orchestraNarration } from './data.js'
 import { concertBandNarration } from './data.js'
 import { chamberEnsemblesNarration } from './data.js'
 import { chamberMusicDoubleReed } from './data.js'
+import { otherInstrumental } from './data.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -11,6 +12,7 @@ const orchestraNarrContainer = document.getElementById('orchestra-narr-container
 const concertBandNarrContainer = document.getElementById('concert-band-narr-container')
 const chamberEnsemblesNarrContainer = document.getElementById('chamber-ensemble-narr-container')
 const chamberMusicDoubleReedContainer = document.getElementById('chamber-music-double-reed-container')
+const otherInstrumentalContainer = document.getElementById('other-instrumental-works')
 
 let concertoHTML = ''
 
@@ -149,4 +151,27 @@ concertos.forEach(concerto => {
   `
   })
   chamberMusicDoubleReedContainer.innerHTML = chamberMusicDoubleReedHTML;
+
+  let otherInstrumentalHTML = ''
+
+  otherInstrumental.forEach(otherInstr => {
+    otherInstrumentalHTML += `
+    <div class="otherInstr">
+      <h3>${otherInstr.Title}</h3>
+      <p><strong>Category: </strong>${otherInstr.Category}</p>
+      <p><strong>Forces: </strong>${otherInstr.Forces}</p>
+      <p><strong>Date of Composition: </strong>${otherInstr.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${otherInstr.Duration}</p>
+      <p><strong>Score: </strong>${otherInstr.Score}</p>
+      <p><strong>Part(s): </strong>${otherInstr.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${otherInstr.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${otherInstr.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${otherInstr.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${otherInstr.URL}" target="_blank">${otherInstr.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${otherInstr.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  otherInstrumentalContainer.innerHTML = otherInstrumentalHTML;
   
