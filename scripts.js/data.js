@@ -478,5 +478,36 @@ export const otherInstrumental = [
     recordingFormat: 'n/a',
     URL: 'https://www.christopherkies.com/store/taylor-fanfare-for-string-quartet-and-piano',
     catalogueNo: '066'
+  }
+]
+
+export const pianoSolo = [
+  {
+    Title: 'Eight Ragtime Pieces for Piano',
+    Category: 'Piano Solo',
+    Forces: 'Piano',
+    dateOfComposition: '1975-1993',
+    Duration: 'ca. 28 minutes',
+    Score: '81 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performances',
+    URL: 'https://www.christopherkies.com/store/eight-ragtime-pieces-for-piano',
+    catalogueNo: '051'
   },
+  {
+    Title: 'Cadenzas to W. A. Mozart\'s Piano Concerto, K. 467',
+    Category: 'Piano Solo',
+    Forces: 'Piano',
+    dateOfComposition: '1980; revised 2021',
+    Duration: 'not given',
+    Score: '11 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'n/a',
+    URL: 'https://www.christopherkies.com/store/cadenzas-to-mozarts-piano-concerto-k-467',
+    catalogueNo: '146'
+  }
 ]

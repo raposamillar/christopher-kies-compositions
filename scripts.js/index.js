@@ -5,6 +5,7 @@ import { concertBandNarration } from './data.js'
 import { chamberEnsemblesNarration } from './data.js'
 import { chamberMusicDoubleReed } from './data.js'
 import { otherInstrumental } from './data.js'
+import { pianoSolo } from './data.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -13,6 +14,7 @@ const concertBandNarrContainer = document.getElementById('concert-band-narr-cont
 const chamberEnsemblesNarrContainer = document.getElementById('chamber-ensemble-narr-container')
 const chamberMusicDoubleReedContainer = document.getElementById('chamber-music-double-reed-container')
 const otherInstrumentalContainer = document.getElementById('other-instrumental-works')
+const pianoSoloContainer = document.getElementById('piano-solo')
 
 let concertoHTML = ''
 
@@ -174,4 +176,27 @@ concertos.forEach(concerto => {
   `
   })
   otherInstrumentalContainer.innerHTML = otherInstrumentalHTML;
+
+  let pianoSoloHTML = ''
+
+  pianoSolo.forEach(soloPiano => {
+    pianoSoloHTML += `
+    <div class="soloPiano">
+      <h3>${soloPiano.Title}</h3>
+      <p><strong>Category: </strong>${soloPiano.Category}</p>
+      <p><strong>Forces: </strong>${soloPiano.Forces}</p>
+      <p><strong>Date of Composition: </strong>${soloPiano.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${soloPiano.Duration}</p>
+      <p><strong>Score: </strong>${soloPiano.Score}</p>
+      <p><strong>Part(s): </strong>${soloPiano.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${soloPiano.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${soloPiano.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${soloPiano.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${soloPiano.URL}" target="_blank">${soloPiano.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${soloPiano.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  pianoSoloContainer.innerHTML = pianoSoloHTML;
   
