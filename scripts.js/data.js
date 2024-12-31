@@ -506,7 +506,7 @@ export const pianoSolo = [
     partOrParts: 'n/a',
     programNoteAvailable: 'n/a',
     sheetMusicFormat: 'PDF',
-    recordingFormat: 'n/a',
+    recordingFormat: 'mp3; MIDI',
     URL: 'https://www.christopherkies.com/store/cadenzas-to-mozarts-piano-concerto-k-467',
     catalogueNo: '146'
   }
