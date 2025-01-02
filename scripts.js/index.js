@@ -6,6 +6,8 @@ import { chamberEnsemblesNarration } from './data.js'
 import { chamberMusicDoubleReed } from './data.js'
 import { otherInstrumental } from './data.js'
 import { pianoSolo } from './data.js'
+import { pianoFourHands } from './data.js'
+
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -15,6 +17,7 @@ const chamberEnsemblesNarrContainer = document.getElementById('chamber-ensemble-
 const chamberMusicDoubleReedContainer = document.getElementById('chamber-music-double-reed-container')
 const otherInstrumentalContainer = document.getElementById('other-instrumental-works')
 const pianoSoloContainer = document.getElementById('piano-solo')
+const pianoFourHandsContainer = document.getElementById('piano-four-hands')
 
 let concertoHTML = ''
 
@@ -199,4 +202,27 @@ concertos.forEach(concerto => {
   `
   })
   pianoSoloContainer.innerHTML = pianoSoloHTML;
+
+  let pianoFourHandsHTML = ''
+
+  pianoFourHands.forEach(fourHandsPiano => {
+    pianoFourHandsHTML += `
+    <div class="fourHandsPiano">
+      <h3>${fourHandsPiano.Title}</h3>
+      <p><strong>Category: </strong>${fourHandsPiano.Category}</p>
+      <p><strong>Forces: </strong>${fourHandsPiano.Forces}</p>
+      <p><strong>Date of Composition: </strong>${fourHandsPiano.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${fourHandsPiano.Duration}</p>
+      <p><strong>Score: </strong>${fourHandsPiano.Score}</p>
+      <p><strong>Part(s): </strong>${fourHandsPiano.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${fourHandsPiano.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${fourHandsPiano.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${fourHandsPiano.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${fourHandsPiano.URL}" target="_blank">${fourHandsPiano.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${fourHandsPiano.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  pianoFourHandsContainer.innerHTML = pianoFourHandsHTML;
   

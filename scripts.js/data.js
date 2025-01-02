@@ -511,3 +511,90 @@ export const pianoSolo = [
     catalogueNo: '146'
   }
 ]
+
+export const pianoFourHands = [
+  {
+    Title: 'Flight of the Bungled G for Piano Four-Hands',
+    Category: 'Piano Four-Hands',
+    Forces: 'One Piano, Four-Hands',
+    dateOfComposition: 'orig. 2001; arr. 2018',
+    Duration: '2.5 minutes',
+    Score: '4 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/flight-of-the-bungled-g-for-piano-four-hands',
+    catalogueNo: '145'
+  },
+  {
+    Title: 'Four Four-Handed Complements',
+    Category: 'Piano Four-Hands',
+    Forces: 'One Piano, Four-Hands',
+    dateOfComposition: '2007; revised 2013',
+    Duration: 'ca. 15 minutes',
+    Score: '54 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; MIDI',
+    URL: 'https://www.christopherkies.com/store/four-four-handed-complements',
+    catalogueNo: '052'
+  },
+  {
+    Title: 'Le Tombeau de Saint-Saëns for Piano Four-Hands and Narrator',
+    Category: 'Piano Four-Hands',
+    Forces: 'One Piano, Four-Hands and Narrator',
+    dateOfComposition: '2020',
+    Duration: '18.5 minutes',
+    Score: '42 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; MIDI',
+    URL: 'https://www.christopherkies.com/store/letombeaudesaintsaenspianofourhandsandnarrator',
+    catalogueNo: '20c'
+  },
+  {
+    Title: 'Little Red Riding Hood (or Ladle Rat Rotten Hut) for Piano Four-Hands and Narrator',
+    Category: 'Piano Four-Hands and Narrator',
+    Forces: 'One Piano, Four-Hands and Narrator',
+    dateOfComposition: 'orig. 2007; arr. 2012',
+    Duration: '12.5 minutes',
+    Score: '27 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; MIDI',
+    URL: 'https://www.christopherkies.com/store/little-red-riding-hood-or-ladle-rat-rotten-hut-for-piano-four-hands-and-narrator',
+    catalogueNo: '022 / 053'
+  },
+  {
+    Title: 'Taylor Fanfare for Piano Four-Hands',
+    Category: 'Piano Four-Hands',
+    Forces: 'One Piano, Four-Hands',
+    dateOfComposition: '2013',
+    Duration: '4.5 minutes',
+    Score: '16 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; MIDI',
+    URL: 'https://www.christopherkies.com/store/taylor-fanfare-for-piano-four-hands?rq=taylor%20fanfare',
+    catalogueNo: '054'
+  },
+  {
+    Title: 'Twelve Great Classical Melodies From Mozart to Tchaikovsky (for the early grade piano student and their teacher to play together)',
+    Category: 'Piano Four-Hands (Pedagogical)',
+    Forces: 'One Piano, Four-Hands',
+    dateOfComposition: '2023',
+    Duration: 'not given',
+    Score: 'to be added',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'n/a',
+    URL: 'to be added',
+    catalogueNo: 'to be added'
+  }
+]
