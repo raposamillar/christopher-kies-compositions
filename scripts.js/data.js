@@ -598,3 +598,20 @@ export const pianoFourHands = [
     catalogueNo: 'to be added'
   }
 ]
+
+export const twoPianos = [
+  {
+    Title: 'Four Bachtatonic/Rocktatonic Inventions for Two Pianos',
+    Category: 'Two Pianos',
+    Forces: 'Two Pianos, Four-Hands',
+    dateOfComposition: '2018',
+    Duration: '11 minutes',
+    Score: '37 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; MIDI',
+    URL: 'https://www.christopherkies.com/store/bachtatonicrocktatonic-inventions-for-two-pianos',
+    catalogueNo: '055'
+  }
+]  

@@ -7,7 +7,7 @@ import { chamberMusicDoubleReed } from './data.js'
 import { otherInstrumental } from './data.js'
 import { pianoSolo } from './data.js'
 import { pianoFourHands } from './data.js'
-
+import { twoPianos } from './data.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -18,6 +18,7 @@ const chamberMusicDoubleReedContainer = document.getElementById('chamber-music-d
 const otherInstrumentalContainer = document.getElementById('other-instrumental-works')
 const pianoSoloContainer = document.getElementById('piano-solo')
 const pianoFourHandsContainer = document.getElementById('piano-four-hands')
+const twoPianosContainer = document.getElementById('two-pianos')
 
 let concertoHTML = ''
 
@@ -225,4 +226,27 @@ concertos.forEach(concerto => {
   `
   })
   pianoFourHandsContainer.innerHTML = pianoFourHandsHTML;
+
+  let twoPianosHTML = ''
+
+  twoPianos.forEach(twoPiano => {
+    twoPianosHTML += `
+    <div class="twoPiano">
+      <h3>${twoPiano.Title}</h3>
+      <p><strong>Category: </strong>${twoPiano.Category}</p>
+      <p><strong>Forces: </strong>${twoPiano.Forces}</p>
+      <p><strong>Date of Composition: </strong>${twoPiano.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${twoPiano.Duration}</p>
+      <p><strong>Score: </strong>${twoPiano.Score}</p>
+      <p><strong>Part(s): </strong>${twoPiano.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${twoPiano.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${twoPiano.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${twoPiano.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${twoPiano.URL}" target="_blank">${twoPiano.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${twoPiano.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  twoPianosContainer.innerHTML = twoPianosHTML;
   
