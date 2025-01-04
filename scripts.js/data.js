@@ -615,3 +615,48 @@ export const twoPianos = [
     catalogueNo: '055'
   }
 ]  
+
+export const pedPiano = [
+  {
+    Title: 'Twelve Short Pieces for Piano (from beginner to intermediate levels)',
+    Category: 'Pedagogical Piano',
+    Forces: 'Piano',
+    dateOfComposition: '2023',
+    Duration: 'not given',
+    Score: 'to be added',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'n/a',
+    URL: 'to be added',
+    catalogueNo: 'to be added'
+  },
+  {
+    Title: 'Twelve Great Classical Melodies From Mozart to Tchaikovsky (for the early grade piano student and their teacher to play together)',
+    Category: 'Pedagogical Piano',
+    Forces: 'One Piano, Four Hands',
+    dateOfComposition: '2023',
+    Duration: 'not given',
+    Score: 'to be added',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'n/a',
+    URL: 'to be added',
+    catalogueNo: 'to be added'
+  },
+  {
+    Title: '24 Erstwhile Familiar Tunes',
+    Category: 'Pedagogical Piano',
+    Forces: 'Piano Solo, Four-Hands, and Six-Hands',
+    dateOfComposition: '2023',
+    Duration: 'not given',
+    Score: 'to be added',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'n/a',
+    URL: 'to be added',
+    catalogueNo: 'to be added'
+  }
+]  

@@ -8,6 +8,7 @@ import { otherInstrumental } from './data.js'
 import { pianoSolo } from './data.js'
 import { pianoFourHands } from './data.js'
 import { twoPianos } from './data.js'
+import { pedPiano } from './data.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -19,6 +20,7 @@ const otherInstrumentalContainer = document.getElementById('other-instrumental-w
 const pianoSoloContainer = document.getElementById('piano-solo')
 const pianoFourHandsContainer = document.getElementById('piano-four-hands')
 const twoPianosContainer = document.getElementById('two-pianos')
+const pedPianoContainer = document.getElementById('ped-piano')
 
 let concertoHTML = ''
 
@@ -249,4 +251,27 @@ concertos.forEach(concerto => {
   `
   })
   twoPianosContainer.innerHTML = twoPianosHTML;
+
+  let pedPianoHTML = ''
+
+  pedPiano.forEach(pianoPed => {
+    pedPianoHTML += `
+    <div class="pianoPed">
+      <h3>${pianoPed.Title}</h3>
+      <p><strong>Category: </strong>${pianoPed.Category}</p>
+      <p><strong>Forces: </strong>${pianoPed.Forces}</p>
+      <p><strong>Date of Composition: </strong>${pianoPed.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${pianoPed.Duration}</p>
+      <p><strong>Score: </strong>${pianoPed.Score}</p>
+      <p><strong>Part(s): </strong>${pianoPed.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${pianoPed.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${pianoPed.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${pianoPed.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${pianoPed.URL}" target="_blank">${pianoPed.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${pianoPed.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  pedPianoContainer.innerHTML = pedPianoHTML;
   
