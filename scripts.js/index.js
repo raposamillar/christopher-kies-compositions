@@ -10,7 +10,7 @@ import { pianoFourHands } from './data.js'
 import { twoPianos } from './data.js'
 import { pedPiano } from './data.js'
 import { instrArrangements } from './data.js'
-
+import { soloVoiceAndAccomp } from './data.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -24,6 +24,7 @@ const pianoFourHandsContainer = document.getElementById('piano-four-hands')
 const twoPianosContainer = document.getElementById('two-pianos')
 const pedPianoContainer = document.getElementById('ped-piano')
 const instrArrangementsContainer = document.getElementById('instrumental-arrangements')
+const soloVoiceAndAccompContainer = document.getElementById('solo-voice-and-accompaniment')
 
 let concertoHTML = ''
 
@@ -300,4 +301,27 @@ concertos.forEach(concerto => {
   `
   })
   instrArrangementsContainer.innerHTML = instrArrangementsHTML;
+
+  let soloVoiceAndAccompHTML = ''
+
+  soloVoiceAndAccomp.forEach(accompAndSoloVoice => {
+    soloVoiceAndAccompHTML += `
+    <div class="instrArr">
+      <h3>${accompAndSoloVoice.Title}</h3>
+      <p><strong>Category: </strong>${accompAndSoloVoice.Category}</p>
+      <p><strong>Forces: </strong>${accompAndSoloVoice.Forces}</p>
+      <p><strong>Date of Composition: </strong>${accompAndSoloVoice.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${accompAndSoloVoice.Duration}</p>
+      <p><strong>Score: </strong>${accompAndSoloVoice.Score}</p>
+      <p><strong>Part(s): </strong>${accompAndSoloVoice.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${accompAndSoloVoice.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${accompAndSoloVoice.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${accompAndSoloVoice.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${accompAndSoloVoice.URL}" target="_blank">${accompAndSoloVoice.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${accompAndSoloVoice.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  soloVoiceAndAccompContainer.innerHTML = soloVoiceAndAccompHTML;
   

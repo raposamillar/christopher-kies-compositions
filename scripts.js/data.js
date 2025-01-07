@@ -1069,3 +1069,34 @@ export const instrArrangements = [
     catalogueNo: '105'
   }
 ]  
+
+export const soloVoiceAndAccomp = [
+  {
+    Title: 'Karen\'s Song for Soprano (or Treble Chorus), Flute and Piano (or Harp)',
+    Category: 'Solo Voice and Accompaniment',
+    Forces: 'Soprano (or Treble Chorus), Flute, and Piano (or Harp)',
+    dateOfComposition: '2003',
+    Duration: '2.5 minutes',
+    Score: '6 pp.',
+    partOrParts: '2 pp.',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/karens-song-for-soprano-or-treble-chorus-flute-and-piano-or-harp',
+    catalogueNo: '109'
+  },
+  {
+    Title: 'Six Italian Songs for Soprano and Piano',
+    Category: 'Solo Voice and Accompaniment',
+    Forces: 'Soprano and Piano',
+    dateOfComposition: '2013',
+    Duration: '13 minutes',
+    Score: '33 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/six-italian-song-for-soprano-and-piano',
+    catalogueNo: '112'
+  }
+]  
