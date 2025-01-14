@@ -1287,7 +1287,7 @@ export const mixedChorus = [
     programNoteAvailable: 'Short Description',
     sheetMusicFormat: 'PDF',
     recordingFormat: 'mp3; Live Performance',
-    URL: 'https://www.christopherkies.com/store/the-geheimerath-rodeleins-house-for-satb-chorus-piano-and-narrator?rq=The%20Geheimerath',
+    URL: ' https://www.christopherkies.com/store/the-geheimerath-rodeleins-house-for-satb-chorus-piano-and-narrator',
     catalogueNo: '139'
   },
   {
