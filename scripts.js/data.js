@@ -1098,5 +1098,22 @@ export const soloVoiceAndAccomp = [
     recordingFormat: 'mp3; Live Performance',
     URL: 'https://www.christopherkies.com/store/six-italian-song-for-soprano-and-piano',
     catalogueNo: '112'
+  },
+]
+
+export const twoOrMoreVoicesAndAccomp = [
+  {
+    Title: 'Chinese Folk Song Mashup 1.0',
+    Category: 'Two or More Voices and Accompaniment',
+    Forces: 'Four Solo Singers (SATB), Piano, and Woodwind Quartet',
+    dateOfComposition: '2017',
+    Duration: '4.75 minutes',
+    Score: 'Full Score: 25 pp. + Piano/Vocal Score: 13 pp.',
+    partOrParts: '8 pp.',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/chinese-folk-song-mashup-10',
+    catalogueNo: '114'
   }
 ]  

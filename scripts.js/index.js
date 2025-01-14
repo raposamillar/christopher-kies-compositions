@@ -11,6 +11,8 @@ import { twoPianos } from './data.js'
 import { pedPiano } from './data.js'
 import { instrArrangements } from './data.js'
 import { soloVoiceAndAccomp } from './data.js'
+import { twoOrMoreVoicesAndAccomp } from './data.js'
+
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -25,6 +27,7 @@ const twoPianosContainer = document.getElementById('two-pianos')
 const pedPianoContainer = document.getElementById('ped-piano')
 const instrArrangementsContainer = document.getElementById('instrumental-arrangements')
 const soloVoiceAndAccompContainer = document.getElementById('solo-voice-and-accompaniment')
+const twoOrMoreVoicesAndAccompContainer = document.getElementById('two-or-more-voices-accompaniment')
 
 let concertoHTML = ''
 
@@ -324,4 +327,27 @@ concertos.forEach(concerto => {
   `
   })
   soloVoiceAndAccompContainer.innerHTML = soloVoiceAndAccompHTML;
+
+  let twoOrMoreVoicesAndAccompHTML = ''
+
+  twoOrMoreVoicesAndAccomp.forEach(accompAndVoices => {
+    twoOrMoreVoicesAndAccompHTML += `
+    <div class="instrArr">
+      <h3>${accompAndVoices.Title}</h3>
+      <p><strong>Category: </strong>${accompAndVoices.Category}</p>
+      <p><strong>Forces: </strong>${accompAndVoices.Forces}</p>
+      <p><strong>Date of Composition: </strong>${accompAndVoices.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${accompAndVoices.Duration}</p>
+      <p><strong>Score: </strong>${accompAndVoices.Score}</p>
+      <p><strong>Part(s): </strong>${accompAndVoices.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${accompAndVoices.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${accompAndVoices.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${accompAndVoices.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${accompAndVoices.URL}" target="_blank">${accompAndVoices.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${accompAndVoices.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  twoOrMoreVoicesAndAccompContainer.innerHTML = twoOrMoreVoicesAndAccompHTML;
   
