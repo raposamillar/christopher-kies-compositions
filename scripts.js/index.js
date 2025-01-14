@@ -13,6 +13,7 @@ import { instrArrangements } from './data.js'
 import { soloVoiceAndAccomp } from './data.js'
 import { twoOrMoreVoicesAndAccomp } from './data.js'
 import { trebleChildrensChorus } from './data.js'
+import { mixedChorus } from './data.js'
 
 
 const concertosContainer = document.getElementById('concertos-container')
@@ -30,6 +31,7 @@ const instrArrangementsContainer = document.getElementById('instrumental-arrange
 const soloVoiceAndAccompContainer = document.getElementById('solo-voice-and-accompaniment')
 const twoOrMoreVoicesAndAccompContainer = document.getElementById('two-or-more-voices-accompaniment')
 const trebleChildrensChorusContainer = document.getElementById('treble-chorus-and-childrens-chorus')
+const mixedChorusContainer = document.getElementById('mixed-chorus')
 
 let concertoHTML = ''
 
@@ -375,3 +377,26 @@ concertos.forEach(concerto => {
   `
   })
   trebleChildrensChorusContainer.innerHTML = trebleChildrensChorusHTML;
+
+  let mixedChorusHTML = ''
+
+  mixedChorus.forEach(chorusMixed => {
+    mixedChorusHTML += `
+    <div class="instrArr">
+      <h3>${chorusMixed.Title}</h3>
+      <p><strong>Category: </strong>${chorusMixed.Category}</p>
+      <p><strong>Forces: </strong>${chorusMixed.Forces}</p>
+      <p><strong>Date of Composition: </strong>${chorusMixed.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${chorusMixed.Duration}</p>
+      <p><strong>Score: </strong>${chorusMixed.Score}</p>
+      <p><strong>Part(s): </strong>${chorusMixed.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${chorusMixed.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${chorusMixed.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${chorusMixed.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${chorusMixed.URL}" target="_blank">${chorusMixed.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${chorusMixed.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  mixedChorusContainer.innerHTML = mixedChorusHTML;

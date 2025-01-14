@@ -1153,7 +1153,7 @@ export const trebleChildrensChorus = [
     Forces: 'Treble Chorus, Piano, and Orchestral Bells',
     dateOfComposition: '2001',
     Duration: '2.5 minutes',
-    Score: 'Full Score: 25 pp. + Piano/Vocal Score: 13 pp.',
+    Score: 'Full: 25 pp. + Piano/Vocal: 13 pp.',
     partOrParts: '8 pp.',
     programNoteAvailable: 'Short Description',
     sheetMusicFormat: 'PDF',
@@ -1176,7 +1176,7 @@ export const trebleChildrensChorus = [
     catalogueNo: '125'
   },
   {
-    Title: 'Karen’s Song',
+    Title: 'Karen\’s Song',
     Category: 'Treble Chorus and Children\’s Chorus',
     Forces: 'Soprano (or Treble Chorus), Flute and Piano (or Harp)',
     dateOfComposition: '2003',
@@ -1215,6 +1215,93 @@ export const trebleChildrensChorus = [
     sheetMusicFormat: 'PDF',
     recordingFormat: 'mp3; Live Performance',
     URL: 'https://www.christopherkies.com/store/two-songs-from-the-wind-in-the-willows-for-treble-chorus-and-piano',
-    catalogueNo: '129'
+    catalogueNo: '1'
+  }
+]  
+
+export const mixedChorus = [
+  {
+    Title: 'A Poet\’s Life',
+    Category: 'Mixed Chorus (SATB and Other)',
+    Forces: 'SATB Chorus, Piano, Bongos, and Maracas',
+    dateOfComposition: '2006/2011',
+    Duration: '5.25 minutes',
+    Score: '24 pp.',
+    partOrParts: '3 pp.',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/a-poets-life-for-satb-chorus-piano-maracas-and-bongos',
+    catalogueNo: '130'
+  },
+  {
+    Title: 'A Year and a Day',
+    Category: 'Mixed Chorus (SATB and Other)',
+    Forces: 'Mixed Chorus (SATB), Treble Chorus, Flute, Cello, Celeste (or Synthesizer), Piano, and Percussion (one player)',
+    dateOfComposition: '2004',
+    Duration: '18 minutes',
+    Score: 'Full: 81 pp., Piano/Vocal: 58 pp.',
+    partOrParts: '33 pp.',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/a-year-and-a-day-for-satb-chorus-treble-soloists-flute-cello-celeste-or-synthesizer-percussion-and-piano',
+    catalogueNo: '131'
+  },
+  {
+    Title: 'Chinese Folk Song Mashup 1.0',
+    Category: 'Mixed Chorus (SATB and Other)',
+    Forces: 'Four Solo Singers (SATB), Piano, and Woodwind Quartet',
+    dateOfComposition: '2017',
+    Duration: '4.75 minutes',
+    Score: 'Info. to be updated',
+    partOrParts: 'Info. to be updated',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/chinese-folk-song-mashup-10',
+    catalogueNo: '114'
+  },
+  {
+    Title: 'Five Poems by Celia L. Thaxter',
+    Category: 'Mixed Chorus (SATB and Other)',
+    Forces: 'Four Part Chorus (SATB) unaccompanied',
+    dateOfComposition: '1999/2013 revised',
+    Duration: '13 minutes',
+    Score: '27 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/five-poems-by-celia-l-thaxter-for-satb-chorus',
+    catalogueNo: '138'
+  },
+  {
+    Title: 'The Geheimerath Rödelein\’s House',
+    Category: 'Mixed Chorus (SATB and Other)',
+    Forces: 'A Comic Scene for SATB Chorus, Piano and Narrator',
+    dateOfComposition: '2010',
+    Duration: 'ca. 7 minutes',
+    Score: '22 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/the-geheimerath-rodeleins-house-for-satb-chorus-piano-and-narrator?rq=The%20Geheimerath',
+    catalogueNo: '139'
+  },
+  {
+    Title: 'On Censure or Backbiting',
+    Category: 'Mixed Chorus (SATB and Other)',
+    Forces: 'SATB Chorus, unaccompanied',
+    dateOfComposition: '2005',
+    Duration: 'ca. 2 minutes (3 min. with optional narration)',
+    Score: '9 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/on-censure-or-backbiting-for-satb-chorus-unaccompanied',
+    catalogueNo: '140'
   }
 ]  
