@@ -12,6 +12,7 @@ import { pedPiano } from './data.js'
 import { instrArrangements } from './data.js'
 import { soloVoiceAndAccomp } from './data.js'
 import { twoOrMoreVoicesAndAccomp } from './data.js'
+import { trebleChildrensChorus } from './data.js'
 
 
 const concertosContainer = document.getElementById('concertos-container')
@@ -28,6 +29,7 @@ const pedPianoContainer = document.getElementById('ped-piano')
 const instrArrangementsContainer = document.getElementById('instrumental-arrangements')
 const soloVoiceAndAccompContainer = document.getElementById('solo-voice-and-accompaniment')
 const twoOrMoreVoicesAndAccompContainer = document.getElementById('two-or-more-voices-accompaniment')
+const trebleChildrensChorusContainer = document.getElementById('treble-chorus-and-childrens-chorus')
 
 let concertoHTML = ''
 
@@ -350,4 +352,26 @@ concertos.forEach(concerto => {
   `
   })
   twoOrMoreVoicesAndAccompContainer.innerHTML = twoOrMoreVoicesAndAccompHTML;
-  
+
+  let trebleChildrensChorusHTML = ''
+
+  trebleChildrensChorus.forEach(trebleChorus => {
+    trebleChildrensChorusHTML += `
+    <div class="instrArr">
+      <h3>${trebleChorus.Title}</h3>
+      <p><strong>Category: </strong>${trebleChorus.Category}</p>
+      <p><strong>Forces: </strong>${trebleChorus.Forces}</p>
+      <p><strong>Date of Composition: </strong>${trebleChorus.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${trebleChorus.Duration}</p>
+      <p><strong>Score: </strong>${trebleChorus.Score}</p>
+      <p><strong>Part(s): </strong>${trebleChorus.partOrParts}</p>
+      <p><strong>programNoteAvailable: </strong>${trebleChorus.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${trebleChorus.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${trebleChorus.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${trebleChorus.URL}" target="_blank">${trebleChorus.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${trebleChorus.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  trebleChildrensChorusContainer.innerHTML = trebleChildrensChorusHTML;

@@ -1117,3 +1117,104 @@ export const twoOrMoreVoicesAndAccomp = [
     catalogueNo: '114'
   }
 ]  
+
+export const trebleChildrensChorus = [
+  {
+    Title: 'Carol of the Field Mice',
+    Category: 'Treble Chorus and Children\’s Chorus',
+    Forces: 'Three-Part Treble/Children\’s Chorus (SSA) or Two-Part SA and Horn in F',
+    dateOfComposition: '1998',
+    Duration: '2.25 minutes',
+    Score: '5 pp.',
+    partOrParts: '2 pp.',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance Excerpt',
+    URL: 'https://www.christopherkies.com/store/carol-of-the-field-mice',
+    catalogueNo: '120'
+  },
+  {
+    Title: 'Come Let Us Mourn',
+    Category: 'Treble Chorus and Children\’s Chorus',
+    Forces: 'Treble Chorus (SSAA)',
+    dateOfComposition: '2005',
+    Duration: '1.75 minutes',
+    Score: '5 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/come-let-us-mourn',
+    catalogueNo: '123'
+  },
+  {
+    Title: 'Crocus',
+    Category: 'Treble Chorus and Children\’s Chorus',
+    Forces: 'Treble Chorus, Piano, and Orchestral Bells',
+    dateOfComposition: '2001',
+    Duration: '2.5 minutes',
+    Score: 'Full Score: 25 pp. + Piano/Vocal Score: 13 pp.',
+    partOrParts: '8 pp.',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/chinese-folk-song-mashup-10',
+    catalogueNo: '114'
+  },
+  {
+    Title: 'English is Tough Stuff',
+    Category: 'Treble Chorus and Children\’s Chorus',
+    Forces: 'Treble Chorus and Piano',
+    dateOfComposition: '2003',
+    Duration: '2.5 minutes',
+    Score: '8 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/english-is-tough-stuff-for-treble-or-childrens-chorus-and-piano',
+    catalogueNo: '125'
+  },
+  {
+    Title: 'Karen’s Song',
+    Category: 'Treble Chorus and Children\’s Chorus',
+    Forces: 'Soprano (or Treble Chorus), Flute and Piano (or Harp)',
+    dateOfComposition: '2003',
+    Duration: '2.5 minutes',
+    Score: '6 pp.',
+    partOrParts: '2 pp.',
+    programNoteAvailable: 'Short Description',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/karens-song-for-soprano-or-treble-chorus-flute-and-piano-or-harp',
+    catalogueNo: '109'
+  },
+  {
+    Title: 'The Sandpiper',
+    Category: 'Treble Chorus and Children\’s Chorus',
+    Forces: 'Two Treble Choruses, Flute, Clarinet, and Guitar (or Cello)',
+    dateOfComposition: '1997',
+    Duration: '4.75 minutes',
+    Score: '17 pp.',
+    partOrParts: '12 pp.',
+    programNoteAvailable: 'n/a',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/the-sandpiper',
+    catalogueNo: '126'
+  },
+  {
+    Title: 'Two Songs from The Wind in the Willows',
+    Category: 'Treble Chorus and Children\’s Chorus',
+    Forces: 'Treble Chorus and Piano',
+    dateOfComposition: '1997',
+    Duration: '4 minutes',
+    Score: '15 pp.',
+    partOrParts: 'n/a',
+    programNoteAvailable: 'Yes',
+    sheetMusicFormat: 'PDF',
+    recordingFormat: 'mp3; Live Performance',
+    URL: 'https://www.christopherkies.com/store/two-songs-from-the-wind-in-the-willows-for-treble-chorus-and-piano',
+    catalogueNo: '129'
+  }
+]  
