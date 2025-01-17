@@ -1,19 +1,21 @@
-import { concertos } from './data.js'
-import { orchestral } from './data.js'
-import { orchestraNarration } from './data.js'
-import { concertBandNarration } from './data.js'
-import { chamberEnsemblesNarration } from './data.js'
-import { chamberMusicDoubleReed } from './data.js'
-import { otherInstrumental } from './data.js'
-import { pianoSolo } from './data.js'
-import { pianoFourHands } from './data.js'
-import { twoPianos } from './data.js'
-import { pedPiano } from './data.js'
-import { instrArrangements } from './data.js'
-import { soloVoiceAndAccomp } from './data.js'
-import { twoOrMoreVoicesAndAccomp } from './data.js'
-import { trebleChildrensChorus } from './data.js'
-import { mixedChorus } from './data.js'
+import { concertos } from './catalogue.js'
+import { orchestral } from './catalogue.js'
+import { orchestraNarration } from './catalogue.js'
+import { concertBandNarration } from './catalogue.js'
+import { chamberEnsemblesNarration } from './catalogue.js'
+import { chamberMusicDoubleReed } from './catalogue.js'
+import { otherInstrumental } from './catalogue.js'
+import { pianoSolo } from './catalogue.js'
+import { pianoFourHands } from './catalogue.js'
+import { twoPianos } from './catalogue.js'
+import { pedPiano } from './catalogue.js'
+import { instrArrangements } from './catalogue.js'
+import { soloVoiceAndAccomp } from './catalogue.js'
+import { twoOrMoreVoicesAndAccomp } from './catalogue.js'
+import { trebleChildrensChorus } from './catalogue.js'
+import { mixedChorus } from './catalogue.js'
+
+import { programNotes } from './notes.js'
 
 
 const concertosContainer = document.getElementById('concertos-container')
@@ -33,6 +35,8 @@ const twoOrMoreVoicesAndAccompContainer = document.getElementById('two-or-more-v
 const trebleChildrensChorusContainer = document.getElementById('treble-chorus-and-childrens-chorus')
 const mixedChorusContainer = document.getElementById('mixed-chorus')
 
+const programNotesContainer = document.getElementById('program-notes')
+
 let concertoHTML = ''
 
 concertos.forEach(concerto => {
@@ -45,7 +49,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${concerto.Duration}</p>
       <p><strong>Score: </strong>${concerto.Score}</p>
       <p><strong>Part(s): </strong>${concerto.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${concerto.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${concerto.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${concerto.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${concerto.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${concerto.URL}" target="_blank">${concerto.URL}</a></p>
@@ -68,7 +72,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${orchestra.Duration}</p>
       <p><strong>Score: </strong>${orchestra.Score}</p>
       <p><strong>Part(s): </strong>${orchestra.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${orchestra.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${orchestra.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${orchestra.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${orchestra.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${orchestra.URL}" target="_blank">${orchestra.URL}</a></p>
@@ -91,7 +95,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${orchestraNarr.Duration}</p>
       <p><strong>Score: </strong>${orchestraNarr.Score}</p>
       <p><strong>Part(s): </strong>${orchestraNarr.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${orchestraNarr.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${orchestraNarr.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${orchestraNarr.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${orchestraNarr.recordingFormat}</p>
      <p><strong>URL: </strong><a href="${orchestraNarr.URL}" target="_blank">${orchestraNarr.URL}</a></p>
@@ -114,7 +118,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${concertBandNarr.Duration}</p>
       <p><strong>Score: </strong>${concertBandNarr.Score}</p>
       <p><strong>Part(s): </strong>${concertBandNarr.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${concertBandNarr.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${concertBandNarr.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${concertBandNarr.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${concertBandNarr.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${concertBandNarr.URL}" target="_blank">${concertBandNarr.URL}</a></p>
@@ -137,7 +141,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${chamberEnsemblesNarr.Duration}</p>
       <p><strong>Score: </strong>${chamberEnsemblesNarr.Score}</p>
       <p><strong>Part(s): </strong>${chamberEnsemblesNarr.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${chamberEnsemblesNarr.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${chamberEnsemblesNarr.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${chamberEnsemblesNarr.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${chamberEnsemblesNarr.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${chamberEnsemblesNarr.URL}" target="_blank">${chamberEnsemblesNarr.URL}</a></p>
@@ -160,7 +164,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${chamberDoubleReed.Duration}</p>
       <p><strong>Score: </strong>${chamberDoubleReed.Score}</p>
       <p><strong>Part(s): </strong>${chamberDoubleReed.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${chamberDoubleReed.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${chamberDoubleReed.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${chamberDoubleReed.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${chamberDoubleReed.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${chamberDoubleReed.URL}" target="_blank">${chamberDoubleReed.URL}</a></p>
@@ -183,7 +187,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${otherInstr.Duration}</p>
       <p><strong>Score: </strong>${otherInstr.Score}</p>
       <p><strong>Part(s): </strong>${otherInstr.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${otherInstr.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${otherInstr.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${otherInstr.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${otherInstr.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${otherInstr.URL}" target="_blank">${otherInstr.URL}</a></p>
@@ -206,7 +210,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${soloPiano.Duration}</p>
       <p><strong>Score: </strong>${soloPiano.Score}</p>
       <p><strong>Part(s): </strong>${soloPiano.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${soloPiano.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${soloPiano.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${soloPiano.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${soloPiano.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${soloPiano.URL}" target="_blank">${soloPiano.URL}</a></p>
@@ -229,7 +233,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${fourHandsPiano.Duration}</p>
       <p><strong>Score: </strong>${fourHandsPiano.Score}</p>
       <p><strong>Part(s): </strong>${fourHandsPiano.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${fourHandsPiano.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${fourHandsPiano.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${fourHandsPiano.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${fourHandsPiano.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${fourHandsPiano.URL}" target="_blank">${fourHandsPiano.URL}</a></p>
@@ -252,7 +256,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${twoPiano.Duration}</p>
       <p><strong>Score: </strong>${twoPiano.Score}</p>
       <p><strong>Part(s): </strong>${twoPiano.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${twoPiano.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${twoPiano.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${twoPiano.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${twoPiano.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${twoPiano.URL}" target="_blank">${twoPiano.URL}</a></p>
@@ -275,7 +279,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${pianoPed.Duration}</p>
       <p><strong>Score: </strong>${pianoPed.Score}</p>
       <p><strong>Part(s): </strong>${pianoPed.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${pianoPed.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${pianoPed.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${pianoPed.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${pianoPed.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${pianoPed.URL}" target="_blank">${pianoPed.URL}</a></p>
@@ -298,7 +302,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${instrArr.Duration}</p>
       <p><strong>Score: </strong>${instrArr.Score}</p>
       <p><strong>Part(s): </strong>${instrArr.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${instrArr.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${instrArr.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${instrArr.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${instrArr.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${instrArr.URL}" target="_blank">${instrArr.URL}</a></p>
@@ -313,7 +317,7 @@ concertos.forEach(concerto => {
 
   soloVoiceAndAccomp.forEach(accompAndSoloVoice => {
     soloVoiceAndAccompHTML += `
-    <div class="instrArr">
+    <div class="accompAndSoloVoice">
       <h3>${accompAndSoloVoice.Title}</h3>
       <p><strong>Category: </strong>${accompAndSoloVoice.Category}</p>
       <p><strong>Forces: </strong>${accompAndSoloVoice.Forces}</p>
@@ -321,7 +325,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${accompAndSoloVoice.Duration}</p>
       <p><strong>Score: </strong>${accompAndSoloVoice.Score}</p>
       <p><strong>Part(s): </strong>${accompAndSoloVoice.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${accompAndSoloVoice.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${accompAndSoloVoice.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${accompAndSoloVoice.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${accompAndSoloVoice.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${accompAndSoloVoice.URL}" target="_blank">${accompAndSoloVoice.URL}</a></p>
@@ -336,7 +340,7 @@ concertos.forEach(concerto => {
 
   twoOrMoreVoicesAndAccomp.forEach(accompAndVoices => {
     twoOrMoreVoicesAndAccompHTML += `
-    <div class="instrArr">
+    <div class="accompAndVoices">
       <h3>${accompAndVoices.Title}</h3>
       <p><strong>Category: </strong>${accompAndVoices.Category}</p>
       <p><strong>Forces: </strong>${accompAndVoices.Forces}</p>
@@ -344,7 +348,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${accompAndVoices.Duration}</p>
       <p><strong>Score: </strong>${accompAndVoices.Score}</p>
       <p><strong>Part(s): </strong>${accompAndVoices.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${accompAndVoices.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${accompAndVoices.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${accompAndVoices.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${accompAndVoices.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${accompAndVoices.URL}" target="_blank">${accompAndVoices.URL}</a></p>
@@ -359,7 +363,7 @@ concertos.forEach(concerto => {
 
   trebleChildrensChorus.forEach(trebleChorus => {
     trebleChildrensChorusHTML += `
-    <div class="instrArr">
+    <div class="trebleChorus">
       <h3>${trebleChorus.Title}</h3>
       <p><strong>Category: </strong>${trebleChorus.Category}</p>
       <p><strong>Forces: </strong>${trebleChorus.Forces}</p>
@@ -367,7 +371,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${trebleChorus.Duration}</p>
       <p><strong>Score: </strong>${trebleChorus.Score}</p>
       <p><strong>Part(s): </strong>${trebleChorus.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${trebleChorus.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${trebleChorus.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${trebleChorus.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${trebleChorus.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${trebleChorus.URL}" target="_blank">${trebleChorus.URL}</a></p>
@@ -382,7 +386,7 @@ concertos.forEach(concerto => {
 
   mixedChorus.forEach(chorusMixed => {
     mixedChorusHTML += `
-    <div class="instrArr">
+    <div class="chorusMixed">
       <h3>${chorusMixed.Title}</h3>
       <p><strong>Category: </strong>${chorusMixed.Category}</p>
       <p><strong>Forces: </strong>${chorusMixed.Forces}</p>
@@ -390,7 +394,7 @@ concertos.forEach(concerto => {
       <p><strong>Duration: </strong>${chorusMixed.Duration}</p>
       <p><strong>Score: </strong>${chorusMixed.Score}</p>
       <p><strong>Part(s): </strong>${chorusMixed.partOrParts}</p>
-      <p><strong>programNoteAvailable: </strong>${chorusMixed.programNoteAvailable}</p>
+      <p><strong>Program Note Available: </strong>${chorusMixed.programNoteAvailable}</p>
       <p><strong>Sheet Music Format: </strong>${chorusMixed.sheetMusicFormat}</p>
       <p><strong>Recording Format: </strong>${chorusMixed.recordingFormat}</p>
       <p><strong>URL: </strong><a href="${chorusMixed.URL}" target="_blank">${chorusMixed.URL}</a></p>
@@ -400,3 +404,21 @@ concertos.forEach(concerto => {
   `
   })
   mixedChorusContainer.innerHTML = mixedChorusHTML;
+
+  let programNotesHTML = ''
+
+  programNotes.forEach(notesProgram => {
+    programNotesHTML += `
+    <div class="notesProgram">
+      <h3>${notesProgram.Title}</h3>
+      <p><strong>Catalogue Number: </strong>${notesProgram.catalogueNo}</p>
+      <p><strong>Category: </strong>${notesProgram.Category}</p>
+      <p><strong>Forces: </strong>${notesProgram.Forces}</p>
+      <p><strong>Date of Composition: </strong>${notesProgram.dateOfComposition}</p>
+      <p><strong>URL: </strong><a href="${notesProgram.URL}" target="_blank">${notesProgram.URL}</a></p>
+      <p><strong>Note: </strong>${notesProgram.Note}</p>
+    </div>
+    <hr>
+  `
+  })
+  programNotesContainer.innerHTML = programNotesHTML;
