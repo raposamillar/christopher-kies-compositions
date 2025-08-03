@@ -17,6 +17,7 @@ import { mixedChorus } from './catalogue.js'
 
 import { programNotes } from './notes.js'
 
+import { sheetmusicplus } from './smp.js'
 
 const concertosContainer = document.getElementById('concertos-container')
 const orchestraContainer = document.getElementById('orchestra-container')
@@ -36,6 +37,8 @@ const trebleChildrensChorusContainer = document.getElementById('treble-chorus-an
 const mixedChorusContainer = document.getElementById('mixed-chorus')
 
 const programNotesContainer = document.getElementById('program-notes')
+
+const smpContainer = document.getElementById('smp-arrangeme')
 
 let concertoHTML = ''
 
@@ -422,3 +425,26 @@ concertos.forEach(concerto => {
   `
   })
   programNotesContainer.innerHTML = programNotesHTML;
+
+  let sheetmusicHTML = ''
+
+  sheetmusicplus.forEach(sheetmusic => {
+    sheetmusicHTML += `
+    <div class="sheetmusic">
+      <h3>${sheetmusic.Title}</h3>
+      <p><strong>Category: </strong>${sheetmusic.Category}</p>
+      <p><strong>Forces: </strong>${sheetmusic.Forces}</p>
+      <p><strong>Date of Composition: </strong>${sheetmusic.dateOfComposition}</p>
+      <p><strong>Duration: </strong>${sheetmusic.Duration}</p>
+      <p><strong>Score: </strong>${sheetmusic.Score}</p>
+      <p><strong>Part(s): </strong>${sheetmusic.partOrParts}</p>
+      <p><strong>Program Note Available: </strong>${sheetmusic.programNoteAvailable}</p>
+      <p><strong>Sheet Music Format: </strong>${sheetmusic.sheetMusicFormat}</p>
+      <p><strong>Recording Format: </strong>${sheetmusic.recordingFormat}</p>
+      <p><strong>URL: </strong><a href="${sheetmusic.URL}" target="_blank">${sheetmusic.URL}</a></p>
+      <p><strong>Catalogue Number: </strong>${sheetmusic.catalogueNo}</p>
+    </div>
+    <hr>
+  `
+  })
+  smpContainer.innerHTML = sheetmusicHTML;
