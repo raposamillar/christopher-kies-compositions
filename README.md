@@ -5,5 +5,5 @@ Deployed Application: https://raposamillar.github.io/christopher-kies-compositio
 
 I began this project in December of 2024 primarily for the sake of practicing JavaScript using real-world data. All of the information is drawn from the composer's website: https://christopherkies.com . It never had occurred to me to distill the data from the design. By focusing purely on the entries in Kies' catalogue, however, I am discovering imperfections previously overlooked. In addition to being a source of inspiration for future projects, coding is proving to be a useful content editing tool.
 
-August 2025 Update: Links to Publications on SheetMusicPlus / ArrangeMe 
+August 2025 Update: Links to Publications Uploaded by the Composer on SheetMusicPlus / ArrangeMe 
 https://www.sheetmusicplus.com/en/category/arrangeme/298/christopher-kies
